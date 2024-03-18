@@ -1,6 +1,6 @@
-# Welcome to MkDocs
+# Quasar Engine (PD) Programmer's Docoment
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This document is targeted towards the development of Quasar Engine and its plugins. For User's Decument (UD) visit [Quasar Engine (UD) User's Decoment](http://xyz).
 
 ## Commands
 

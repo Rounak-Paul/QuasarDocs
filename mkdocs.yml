@@ -1,6 +1,43 @@
-site_name: Quasar Engine (PG)
+site_name: Quasar Engine (PD)
 site_url: https://example.com/
 nav:
   - Home: index.md
   - About: about.md
-theme: readthedocs
+theme: 
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: teal
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: purple
+      accent: lime
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Rounak-Paul/QuasarEngine
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@rounakpaul001?sub_confirmation=1
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/v4studios
+
+copyright: |
+  &copy; 2024 <a href="https://github.com/Rounak-Paul"  target="_blank" rel="noopener">Rounak Paul</a>
