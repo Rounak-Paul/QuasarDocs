@@ -34,8 +34,8 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
-      primary: black
-      accent: lime
+      primary: red
+      accent: cyan
 
 markdown_extensions:
   - admonition
