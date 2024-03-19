@@ -4,7 +4,7 @@
 Quasar/src/Core/Application.h
 ```
 
-!!! info
+!!! abstract
     Quasar::Application is the `singleton` object responsible for the following:
     
     * Init Quasar Engine and maintain states of various components, eg. Window, Renderer etc.
@@ -23,3 +23,12 @@ static Application& get_instance()
     None
 === "Output"
     Application instance reference. 
+=== "Info"
+    Get reference to the singleton Quasar Application instance
+
+!!! tip
+    Use the macro `QS_APPLICATION` to get the refence to the singleton Application instance.
+
+    ```cpp
+    #define QS_APPLICATION Application::get_instance()
+    ```
