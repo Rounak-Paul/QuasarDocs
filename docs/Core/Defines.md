@@ -1,8 +1,14 @@
 # Defines
+`typedef` `define`
 
 ```
 Quasar/src/Core/Defines.h
 ```
+
+??? note "Author"
+    [Rounak Paul](mailto:paulrounak1999@gmail.com)
+    
+    Dated: 19th March 2024
 
 ## Types
 

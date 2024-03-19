@@ -3,6 +3,10 @@
 ```
 Quasar/src/Core/Application.h
 ```
+??? note "Author"
+    [Rounak Paul](mailto:paulrounak1999@gmail.com)
+    
+    Dated: 19th March 2024
 
 !!! abstract
     Quasar::Application is the `singleton` object responsible for the following:
