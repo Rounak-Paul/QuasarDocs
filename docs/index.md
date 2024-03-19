@@ -8,10 +8,10 @@ This document is targeted towards the development of Quasar Engine and its plugi
 
 ---
 ## Environment Setup
-### Windows
-* `Visual Studio` - [Visual Studio](https://visualstudio.microsoft.com) C++ devkit for Windows platform.
-* `CMake` - [CMake](https://cmake.org/download/) is a coss platform C++ build tool.
-* `Vulkan` - Graphics and compute API [Vulkan SDK](https://vulkan.lunarg.com). 
+??? note "Windows"
+    * `Visual Studio` - [Visual Studio](https://visualstudio.microsoft.com) C++ devkit for Windows platform.
+    * `CMake` - [CMake](https://cmake.org/download/) is a coss platform C++ build tool.
+    * `Vulkan` - Graphics and compute API [Vulkan SDK](https://vulkan.lunarg.com). 
 
 ## Project layout
 
