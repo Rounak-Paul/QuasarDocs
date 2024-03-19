@@ -2,7 +2,14 @@ site_name: Quasar Engine (PD)
 site_url: https://example.com/
 nav:
   - Home: index.md
-  - About: about.md
+  - Core: 
+    - Defines: Core/Defines.md
+    - Application: Core/Application.md
+    - Input: Core/Input.md
+    - Keycodes: Core/Keycodes.md
+    - Log: Core/Log.md
+    
+  
 theme: 
   name: material
   features:
@@ -30,6 +37,11 @@ theme:
       primary: black
       accent: lime
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
 extra:
   social:
     - icon: fontawesome/brands/github-alt
@@ -38,6 +50,7 @@ extra:
       link: https://www.youtube.com/@rounakpaul001?sub_confirmation=1
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/v4studios
+
 
 copyright: |
   &copy; 2024 <a href="https://github.com/Rounak-Paul"  target="_blank" rel="noopener">Rounak Paul</a>
