@@ -2,16 +2,30 @@
 
 This document is targeted towards the development of Quasar Engine and its plugins. For User's Decument (UD) visit [Quasar Engine (UD) User's Decoment](http://xyz).
 
-## Commands
+## Platforms
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+`Quasar Engine` is designed to be cross compatable between `Windows`, `Mac` and `Linux`. A single Codebase is managed for all three of these platforms. On Windows and Linux native implementation of `Vulkan` is used, while on Mac the Metal translation layer `MoltenVK` is used.
+
+---
+## Environment Setup
+### Windows
+* `Visual Studio` - [Visual Studio](https://visualstudio.microsoft.com) C++ devkit for Windows platform.
+* `CMake` - [CMake](https://cmake.org/download/) is a coss platform C++ build tool.
+* `Vulkan` - Graphics and compute API [Vulkan SDK](https://vulkan.lunarg.com). 
 
 ## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+    QuasarEngine
+    |-Quasar                        # Engine dynamic library
+    |   |-src
+    |   |   |-Core
+    |   |   |-Event
+    |   |   |-Math
+    |   |   |-Platform
+    |   |   |-Renderer
+    |   |-Include
+    |   |-Vendor
+    |-Editor                        # User executable application
+    |   |-src
+    |-Assets
+    |   |-shaders                   # Assets to be copied to bin
