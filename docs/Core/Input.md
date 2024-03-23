@@ -29,8 +29,31 @@ static b8 init()
 
 ---
 
-### is_key_pressed
+### get_instance
 `public` `static`
+
+```cpp
+static Input& get_instance()
+```
+
+=== "Input"
+    None
+=== "Output"
+    Input instance reference. 
+=== "Info"
+    Get reference to the Input system maintained by Quasar Engine.
+
+!!! tip
+    Use the macro `QS_INPUT` to get the refence to the Input system instance.
+
+    ```cpp
+    #define QS_INPUT Input::get_instance()
+    ```
+
+---
+
+### is_key_pressed
+`private` `static`
 
 ```cpp
 static void is_key_pressed(GLFWwindow* window, int key, int scancode, int action, int mods)
@@ -52,7 +75,7 @@ static void is_key_pressed(GLFWwindow* window, int key, int scancode, int action
 ---
 
 ### is_mousebtn_pressed
-`public` `static`
+`private` `static`
 
 ```cpp
 static void is_mousebtn_pressed(GLFWwindow* window, int button, int action, int mods);
@@ -69,6 +92,50 @@ static void is_mousebtn_pressed(GLFWwindow* window, int button, int action, int 
 
 === "Info"
     sets `context.data.u16[0] = button` and Executes event `QS_EVENT.Execute(action ? EVENT_CODE_BUTTON_PRESSED : EVENT_CODE_BUTTON_RELEASED, 0, context)`  with the context.
+
+---
+
+### get_key_state
+`public` `static`
+
+```cpp
+static inline b32 get_key_state(KeyCode key)
+```
+
+=== "Input"
+    KeyCode: Quasar KeyCode enumaration value.
+
+=== "Output"
+    State of the key(maintained by the engine). Returns b32 value.
+    `0` -> key not pressed
+    `1` -> key pressed
+    `2` -> key is held down
+
+=== "Info"
+    Get the Keyboard Key State from the engine. Input events are resolved immidiately and updated to the engine key_state. 
+
+---
+
+### get_mbtn_state
+`public` `static`
+
+```cpp
+static inline b32 get_mbtn_state(MouseCode btn)
+```
+
+=== "Input"
+    MouseCode: Quasar MouseButton enumaration value.
+
+=== "Output"
+    State of the button(maintained by the engine). Returns b32 value.
+    `0` -> key not pressed
+    `1` -> key pressed
+
+    !!! note
+        No spearate output value is provided for mouse button held down.
+
+=== "Info"
+    Get the Mouse Button State from the engine. Input events are resolved immidiately and updated to the engine mouse_state. 
 
 ---
 

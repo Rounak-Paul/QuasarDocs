@@ -8,6 +8,7 @@ nav:
     - Input: Core/Input.md
     - Keycodes: Core/Keycodes.md
     - Log: Core/Log.md
+    - Layer: Core/Layer.md
     
   
 theme: 
