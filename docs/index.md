@@ -33,3 +33,4 @@ ___
     |   |-src
     |-Assets
     |   |-shaders                   # Assets to be copied to bin
+    |-Project                       # User application, hot reload of user code
