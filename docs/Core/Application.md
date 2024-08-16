@@ -11,7 +11,7 @@ Quasar/src/Core/Application.h
 !!! abstract
     Quasar::Application is the `singleton` object responsible for the following:
     
-    * Init Quasar Engine and maintain states of various components, eg. Window, Renderer etc.
+    * Init Quasar Engine and maintain app_state, main window,is_running, clock and dt. 
     * Hosts the main application loop. This is where the main event poling is done. 
     * Shutdown the Quasar Engine on exit. Issue commands to release memory, physical decice and safely shutdown the engine.
 
