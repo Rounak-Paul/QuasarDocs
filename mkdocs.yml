@@ -2,12 +2,19 @@ site_name: Quasar Engine (PD)
 site_url: https://example.com/
 nav:
   - Home: index.md
-  - Core: 
-    - Defines: Core/Defines.md
-    - Application: Core/Application.md
-    - Input: Core/Input.md
-    - Keycodes: Core/Keycodes.md
-    - Log: Core/Log.md
+  - Quasar:
+    - Include:
+      - EntryPoint: Quasar/Include/EntryPoint.md
+    - src:
+      - Core: 
+        - Application: Quasar/src/Core/Application.md
+        - Identifier: Quasar/src/Core/Identifier.md
+        - Input: Quasar/src/Core/Input.md
+        - Keycodes: Quasar/src/Core/Keycodes.md
+        - Log: Quasar/src/Core/Log.md
+        - SystemManager: Quasar/src/Core/SystemManager.md
+      - Defines: Quasar/src/Defines.md
+    - Vendor:
     
   
 theme: 
