@@ -79,17 +79,41 @@ System manager provides `defines` to access the Systems managed by it.
 
 ```cpp
 #define QS_EVENT (*(Event*)QS_SYSTEM_MANAGER.get_system(SYSTEM_EVENT))
+```
+```cpp
 #define QS_INPUT (*(Input*)QS_SYSTEM_MANAGER.get_system(SYSTEM_INPUT))
+```
+```cpp
 #define QS_RESOURCE_SYSTEM (*(ResourceSystem*)QS_SYSTEM_MANAGER.get_system(SYSTEM_RESOURCE))
+```
+```cpp
 #define QS_SHADER_SYSTEM (*(ShaderSystem*)QS_SYSTEM_MANAGER.get_system(SYSTEM_SHADER))
+```
+```cpp
 #define QS_RENDERER_API (*(Renderer::API*)QS_SYSTEM_MANAGER.get_system(SYSTEM_RENDERER))
+```
+```cpp
 #define QS_JOB_SYSTEM (*(JobSystem*)QS_SYSTEM_MANAGER.get_system(SYSTEM_JOB))
+```
+```cpp
 #define QS_TEXTURE_SYSTEM (*(TextureSystem*)QS_SYSTEM_MANAGER.get_system(SYSTEM_TEXTURE))
+```
+```cpp
 #define QS_FONT_SYSTEM (*(FontSystem*)QS_SYSTEM_MANAGER.get_system(SYSTEM_FONT))
+```
+```cpp
 #define QS_MATERIAL_SYSTEM (*(MaterialSystem*)QS_SYSTEM_MANAGER.get_system(SYSTEM_MATERIAL))
+```
+```cpp
 #define QS_RENDER_VIEW_SYSTEM (*(RenderViewSystem*)QS_SYSTEM_MANAGER.get_system(SYSTEM_RENDER_VIEW))
+```
+```cpp
 #define QS_GEOMETRY_SYSTEM (*(GeometrySystem*)QS_SYSTEM_MANAGER.get_system(SYSTEM_GEOMETRY))
+```
+```cpp
 #define QS_WATCH_SYSTEM (*(Watcher*)QS_SYSTEM_MANAGER.get_system(SYSTEM_WATCHER))
+```
+```cpp
 #define QS_LIGHT_SYSTEM (*(LightSystem*)QS_SYSTEM_MANAGER.get_system(SYSTEM_LIGHT))
 ```
 
