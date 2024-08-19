@@ -14,7 +14,7 @@ nav:
         - Log: Quasar/src/Core/Log.md
         - SystemManager: Quasar/src/Core/SystemManager.md
       - Defines: Quasar/src/Defines.md
-    - Vendor:
+    - Vendor: Quasar/Vendor/vendors.md
     
   
 theme: 
