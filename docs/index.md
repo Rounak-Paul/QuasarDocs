@@ -1,6 +1,6 @@
 # Quasar Engine (PD) Programmer's Docoment
 
-This document is targeted towards the development of Quasar Engine and its plugins. For User's Decument (UD) visit [Quasar Engine (UD) User's Decoment](http://xyz).
+This document is the official Quasar Engine documentation. Visit [Quick Start](http://xyz) section for your first Quasar Project setup and build.
 
 ___
 ## Platforms
@@ -17,20 +17,30 @@ ___
     Clone GitHub repo and with CMake run build. Make sure to clone the repo `recursively`.
 
 ___
-## Project Layout
+## Quasar Dev Layout
 
     QuasarEngine
     |-Quasar                        # Engine dynamic library
+    |   |-Include
     |   |-src
+    |   |   |-Containers
     |   |   |-Core
+    |   |   |-Editor
     |   |   |-Event
     |   |   |-Math
+    |   |   |-Memory
+    |   |   |-Resources
     |   |   |-Platform
     |   |   |-Renderer
-    |   |-Include
+    |   |   |-Systems
     |   |-Vendor
-    |-Editor                        # User executable application
+    |-Editor                        # User executable application (currently editor gui defined inside engine)
     |   |-src
     |-Assets
-    |   |-shaders                   # Assets to be copied to bin
+    |   |-fonts
+    |   |-materials
+    |   |-models
+    |   |-textures
+    |   |-shaders
     |-Project                       # User application, hot reload of user code
+    |   |-src                      

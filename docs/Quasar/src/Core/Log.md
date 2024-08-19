@@ -11,7 +11,8 @@ Quasar/src/Core/Log.h
 
 !!! abstract
     Quasar::Log is the logging pipeline for Quasar Engine and Any application using this Engine.
-    Logging as been enabled via some `defines` to easily be able to put logs to this pipeline. 
+    Logging has been enabled via some `defines` to easily be able to put logs to this pipeline. 
+    This generates a Log file in the root directory of the runtime. This log is also displayed in the Editor's UI
 
 ## Defines
 

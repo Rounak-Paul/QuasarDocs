@@ -105,3 +105,39 @@ Quasar/src/Core/Defines.h
 // Max
 #define QS_MAX(x, y) (x > y ? x : y)
 ```
+
+```cpp
+#define GIBIBYTES(amount) (amount * 1024 * 1024 * 1024)
+```
+
+```cpp
+#define MEBIBYTES(amount) (amount * 1024 * 1024)
+```
+
+```cpp
+#define KIBIBYTES(amount) (amount * 1024)
+```
+
+```cpp
+#define GIGABYTES(amount) (amount * 1000 * 1000 * 1000)
+```
+
+```cpp
+#define MEGABYTES(amount) (amount * 1000 * 1000)
+```
+
+```cpp
+#define KILOBYTES(amount) (amount * 1000)
+```
+
+```cpp
+QS_INLINE u64 get_aligned(u64 operand, u64 granularity) {
+    return ((operand + (granularity - 1)) & ~(granularity - 1));
+}
+```
+
+```cpp
+QS_INLINE range get_aligned_range(u64 offset, u64 size, u64 granularity) {
+    return range{get_aligned(offset, granularity), get_aligned(size, granularity)};
+}
+```

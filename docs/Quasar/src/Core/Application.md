@@ -1,4 +1,4 @@
-# Application
+# class QS_API Application
 `Quasar` `class` `QS_API`
 ```
 Quasar/src/Core/Application.h
@@ -75,7 +75,7 @@ app_state& get_app_state()
 === "Output"
     Reference to the Application state managed by the Engine. 
 === "Info"
-    This state is created and passed to the engine at the time of Application creation.
+    This state is created and passed to the engine at the time of Application creation. During runtime the state is modified and used by Application
 
 !!! tip
     Use the macro `QS_APP_STATE` to get the refence to the Application state.
@@ -85,6 +85,20 @@ app_state& get_app_state()
     ```
 
 ---
+
+### get_editor_camera
+`public`
+
+```cpp
+Camera& get_editor_camera()
+```
+
+=== "Input"
+    None
+=== "Output"
+    Reference to the Editor Camera instance. 
+=== "Info"
+    Editor Camera is to be active during editor mode. For project's runtime editor camera will not be available
 
 ### run
 `public`
